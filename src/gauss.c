@@ -5,9 +5,12 @@
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
  */
 int eliminate(Matrix *mat, Matrix *b){
-    /**
-  	 * Tutaj należy umieścić właściwą implemntację.
-		 */
+    /*Kod do wywołania konfliktu */
+		int i;
+		for (i = 0; i<999; i++)
+			printf("hello world!");
+
+		mat->data[0][0] = 5;
 
 		return 0;
 }
