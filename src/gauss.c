@@ -27,7 +27,7 @@ void replace_rows(Matrix *A, Matrix *b, int row1, int row2){
 
 	double tmp = b -> data[row1][0];
 	b -> data[row1][0] = b -> data[row2][0];
-	b -> data[row1][0] = tmp;
+	b -> data[row2][0] = tmp;
 }
 
 //Zwraca 1 przy dzieleniu przez 0
