@@ -44,6 +44,7 @@ int set_factor(double *factor, Matrix *mat, int row, int iter){
  * Zwraca 1 - macierz osobliwa - dzielenie przez 0
  */
 int eliminate(Matrix *mat, Matrix *b){
+
 	int operations = MIN(mat -> r, mat -> c); 
 
 	for (int iter = 0; iter < operations - 1; iter++){ // dla ostatniego rzedu nie musismy nic odejmowac
@@ -62,7 +63,6 @@ int eliminate(Matrix *mat, Matrix *b){
 			b -> data[row][0] -= (b -> data[iter][0]) * factor;
 		}
 	}
-
 
 	return 0;
 }
